@@ -16,7 +16,7 @@ const Header = () => (
         </div>
         
         <nav className="hidden md:flex flex-1 justify-center space-x-8">
-          {['Home', 'About', 'Services', 'Contact'].map((item) => (
+          {['Home', 'Services', 'Contact'].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="text-gray-600 hover:text-indigo-600 font-medium transition-colors">
               {item}
             </a>
@@ -180,7 +180,6 @@ const Footer = () => (
           <h4 className="text-white font-bold mb-6 font-['Outfit']">Quick Links</h4>
           <ul className="space-y-4">
             <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
-            <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
             <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
             <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
           </ul>
